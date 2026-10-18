@@ -26,16 +26,16 @@
    <section id="dashboard" aria-labelledby="dash-title">
     <h2 id="dash-title"> Dashboard</h2>
     <dl>
-        <dt>Total records</dt>
+        <dt>The Total records</dt>
         <dd id="stat-count">0</dd>
-        <dt> Total spent in (RWF)</dt>
+        <dt> The total amount spent in (RWF)</dt>
         <dd id="stat-sum">0</dd>
         <dt>Top category</dt>
         <dd id="stat-top">-</dd>
     </dl>
 </section>
-<section id="records" aria-labelled by="records-titile"
-<h2 id ="record-title">Transactions</h2>
+<section id="records" aria-labelledby="records-title">
+<h2 id ="records-title">Transactions</h2>
 <label for="search">Search(regex)</label>
 <input id="search" type="text">
 <label><input id="case-toggle" type="checkbox"> Case sensitive</label>
@@ -61,15 +61,15 @@
     <tbody id="tbody"></tbody>
 </table>
 </section>   
-<section id="add" aria-labelledby="add-titile">
-    <h2 id="add title"> Add transactions</h2>
+<section id="add" aria-labelledby="add-title">
+    <h2 id="add-title"> Add transactions</h2>
     <form id="txn-form" novalidate>
         <label for="description">Description</label>
-        <input id="Description" type="text" aria-describedby="description-error">
-        <p id="amount-error" class="error'></p>
+        <input id="description" type="text" aria-describedby="description-error">
+        <p id="description-error" class="error"></p>
 
         <label for= "amount">Amount in (RWF)</label>
-        <input id="amount" type="text" inputmode="decimal" aria-describedby="amount-error"
+        <input id="amount" type="text" inputmode="decimal" aria-describedby="amount-error">
         <p id="amount-error" class="error"></p>
 
         <label for ="category">Category</label>
@@ -77,12 +77,24 @@
         <p id="category-error" class="error"></p>
 
         <label for="date">Date</label>
-        <input id="data" type="data" aria-describedby="data-error">
+        <input id="date" type="date" aria-describedby="data-error">
         <p id="date-error" class="error"></p>
 
         <button type="submit">Save</button>
-        <p id=""form-msg: role="status" aria-live="polite"></p>
+        <p id="form-msg" role="status" aria-live="polite"></p>
     </form>
+</section>
+<section id="settings" aria-labelledby="settings-titile">
+    <h2 id="settings-title"> Settings</h2>
+    <label for="cap">Monthly budget in (RWF)</label>
+    <input id="cap" type="text">
+    <p id="cap-msg" role="status" aria-live="polite"></p>
+</section>
+
+<section id="about" aria-labelledby="about-titile">
+    <h2 id="about-titile"> About</h2>
+    <p>Github: <a href="https://github.com/etenna-maker">etenna-maker</a></p>
+    <p>Email: < a href="mailto:e.tenna@alustudent.com>e.tenna@alustudent.com</a></p>
 </section>
 
 

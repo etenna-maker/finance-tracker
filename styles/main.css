@@ -9,7 +9,7 @@
     line-height: 1.5;
  }
 
- /* Skip link: It will be hidden unil you press Tab */
+ /* Skip the link: It will be hidden unil you press Tab */
  .skip-link {
     position:absolute;
     left: -9999px;
@@ -22,7 +22,7 @@
     top:16px;
  }
  
- /* Visible focus for the keyboard users */
+ /* The visible focus for the keyboard users */
 a:focus, input:focus, select:focus, button:focus {
 outline: 3px solid #0b5fff;
 outline-offset:2px;
@@ -118,14 +118,14 @@ td{
     display:block;
 }
 
-/* point1:small phones */
+/* Point1:For the small phones */
 @media (min-width:360px) {
     header h1 {
         font-size: 24px;
     }
 }
 
-/* point2:tablet: nav in a row and normal table */
+/* Point2:For the tablet the nav was in a row and normal table */
 @media (min-width: 768px) {
     nav ul{
         flex-direction:row;
@@ -144,7 +144,7 @@ td{
     }
 }
 
-/* point 3: desktop: sections side by side */
+/* Point 3: For the desktop the sections are side by side */
 @media(min-width:1024px){
     main{
         flex-direction:row;
