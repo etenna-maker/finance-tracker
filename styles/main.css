@@ -1,0 +1,160 @@
+* {
+    box-sizing:border-box;
+}
+ body {
+    margin: 0;
+    font-family:Arial, sans-serif;
+    color: #1a1a1a;
+    background: white;
+    line-height: 1.5;
+ }
+
+ /* Skip link: It will be hidden unil you press Tab */
+ .skip-link {
+    position:absolute;
+    left: -9999px;
+    background: #0b5fff;
+    color:white;
+    padding:8px 16px;
+ }
+ .skip-link:focus{
+    left:16px;
+    top:16px;
+ }
+ 
+ /* Visible focus for the keyboard users */
+a:focus, input:focus, select:focus, button:focus {
+outline: 3px solid #0b5fff;
+outline-offset:2px;
+
+}
+
+header {
+    background:#0b2545;
+    color:white;
+    padding:16px;
+
+}
+
+nav ul {
+    list-style:none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+nav a {
+    color:white;
+}
+
+main {
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+section {
+    border:1px solid #d0d0d0;
+    border-radius: 8px;
+    padding:16px;
+}
+ 
+label {
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,select,button {
+    font-size:16px;
+    padding:8px;
+    width:100%;
+}
+
+button {
+    margin-top:16px;
+    background:#0b5fff;
+    color:white;
+    border:none;
+    border-radius: 6px;
+    cursor:pointer;
+    transition:background-color 0.2s;
+}
+
+
+button:hover {
+    background:#0847c2;
+}
+
+.error {
+    color:#b00020;
+}
+mark{
+    background: #ffe066;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+th,td{
+    text-align:left;
+    padding:8px;
+}
+/* Phone: each table row looks like a card */
+
+thead {
+    display:none;
+}
+tr {
+    display:block;
+    border:1px solid #d0d0d0;
+    border-radius:8px;
+    margin-bottom:12px;
+    padding: 8px;
+}
+td{
+    display:block;
+}
+
+/* point1:small phones */
+@media (min-width:360px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+/* point2:tablet: nav in a row and normal table */
+@media (min-width: 768px) {
+    nav ul{
+        flex-direction:row;
+        gap:16px;
+    }
+    thead{
+        display:table-header-group;
+    }
+    tr {
+        display:table-row;
+        border:none;
+    }
+    td {
+        display:table-cell;
+        border-bottom:1px solid #d0d0d0;
+    }
+}
+
+/* point 3: desktop: sections side by side */
+@media(min-width:1024px){
+    main{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    section{
+        flex:1 1 45%;
+
+    }
+    #records {
+        flex-basis:100%;
+    }
+}

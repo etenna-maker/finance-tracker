@@ -61,6 +61,31 @@
     <tbody id="tbody"></tbody>
 </table>
 </section>   
+<section id="add" aria-labelledby="add-titile">
+    <h2 id="add title"> Add transactions</h2>
+    <form id="txn-form" novalidate>
+        <label for="description">Description</label>
+        <input id="Description" type="text" aria-describedby="description-error">
+        <p id="amount-error" class="error'></p>
+
+        <label for= "amount">Amount in (RWF)</label>
+        <input id="amount" type="text" inputmode="decimal" aria-describedby="amount-error"
+        <p id="amount-error" class="error"></p>
+
+        <label for ="category">Category</label>
+        <input id="category" type="text" aria-describedby="category-error">
+        <p id="category-error" class="error"></p>
+
+        <label for="date">Date</label>
+        <input id="data" type="data" aria-describedby="data-error">
+        <p id="date-error" class="error"></p>
+
+        <button type="submit">Save</button>
+        <p id=""form-msg: role="status" aria-live="polite"></p>
+    </form>
+</section>
+
+
 
     </main>
 
