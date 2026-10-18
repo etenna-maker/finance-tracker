@@ -6,5 +6,5 @@ export function load() {
     }
 }
 export function save(data) {
-    localstorage.setItem("finance", JSON.stringify(data));
+    localStorage.setItem("finance", JSON.stringify(data));
 }
