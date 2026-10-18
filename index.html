@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Student Finance Tracker </title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link"> Skip to the main content</a>
+
+    <header>
+        <h1> Student Finance Tracker</h1>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href = "#dashboard">Dashboard</a></li>
+                <li><a href = "#records">Transactions</a></li>
+                <li><a href = "#add">Add</a></li>
+                <li><a href = "#settings">Settings</a></li>
+                <li><a href=  "#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+   <section id="dashboard" aria-labelledby="dash-title">
+    <h2 id="dash-title"> Dashboard</h2>
+    <dl>
+        <dt>Total records</dt>
+        <dd id="stat-count">0</dd>
+        <dt> Total spent in (RWF)</dt>
+        <dd id="stat-sum">0</dd>
+        <dt>Top category</dt>
+        <dd id="stat-top">-</dd>
+    </dl>
+</section>
+<section id="records" aria-labelled by="records-titile"
+<h2 id ="record-title">Transactions</h2>
+<label for="search">Search(regex)</label>
+<input id="search" type="text">
+<label><input id="case-toggle" type="checkbox"> Case sensitive</label>
+<p id="search-error" role="status"></p>
+<label for="sort">Sort by</label>
+<select id="sort">
+    <option value="date-desc"> Newest first</option>
+    <option value="date-asc"> Oldest first</option>
+    <option value="amount-desc">Highest amount</option>
+    <option value="desc-asc">Description A-Z</option>
+</select>
+<table>
+    <caption>All transactions</caption>
+    <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Description</th>
+            <th scope="col"> Category</th>
+            <th scope="col"> Amount</th>
+            <th scope="col"> Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+</section>   
+
+    </main>
+
+    <footer>
+        <p> Built by Elnathan Mulugeta Copyright 2026</p>
+    </footer>
+
+<script type="module" src="scripts/app.js"></script>
+</body>
+</html>
