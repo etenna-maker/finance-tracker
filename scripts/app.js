@@ -17,7 +17,7 @@ try {
     el("tbody").innerHTML = "";
     list.forEach((r) => {
         let desc = r.description.replace(/</g, "&lt;");
-            if (re) desc= desc.replace(re,(m) => '<mark>${m}</mark>');
+            if (re) desc= desc.replace(re,(m) => `<mark>${m}</mark>`);
               el("tbody").innerHTML += `<tr><td>${r.date}</td><td>${desc}</td><td>${r.category}</td><td>${r.amount}</td><td><button data-id="${r.id}">Delete</button></td></tr>`;
     });
     el("stat-count").textContent = records.length;
@@ -36,6 +36,12 @@ el("txn-form").addEventListener("submit", (e) => {
     save(records);
     render();
 });
-
+el("tbody").addEventListener("click", (e) => {
+    if (e.target.dataset.id && confirm("Delete?")) {
+        records = records.filter((r) => r.id !== e.target.dataset.id);
+        save(records);
+        render();
+    }
+});
 el("search").addEventListener("input", render);
 render();
