@@ -39,6 +39,9 @@ Search examples: `bus`, `^moto`, `(coffee|tea)`. An invalid pattern such as `[` 
 | Enter (in form) | Save transaction |
 | Enter / Space (on Delete) | Delete a row |
 
+## Demo video
+* video (Loom):** https://www.loom.com/share/9eaf2d3e64a54f24a09d33b30c96c410
+
 ## Accessibility notes
 - Landmarks: header, nav, main, sections, footer; one h1, h2 per section
 - Skip-to-content link is the first focusable element
@@ -57,6 +60,7 @@ Manual tests:
 
 ## Known limitations
 Not completed due to time: JSON import/export, currency settings, 7-day chart, inline edit, tests.html, seed.json, demo video.
+
 
 ## AI usage disclosure
 An AI tutor taught me the concepts. Due to time pressure it also gave me HTML/CSS/JS code, which I typed myself and reviewed line by line; I can explain every file. The spec (docs/spec.md) is my own writing. This README was written with AI help, which the brief allows.
