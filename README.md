@@ -39,8 +39,7 @@ Search examples: `bus`, `^moto`, `(coffee|tea)`. An invalid pattern such as `[` 
 | Enter (in form) | Save transaction |
 | Enter / Space (on Delete) | Delete a row |
 
-## Demo video
-* video (Loom):** https://www.loom.com/share/9eaf2d3e64a54f24a09d33b30c96c410
+Watch the demo on Loom: https://www.loom.com/share/9eaf2d3e64a54f24a09d33b30c96c410
 
 ## Accessibility notes
 - Landmarks: header, nav, main, sections, footer; one h1, h2 per section
@@ -59,7 +58,10 @@ Manual tests:
 5. Resize to 360px, 768px, 1024px → layout changes.
 
 ## Known limitations
-Not completed due to time: JSON import/export, currency settings, 7-day chart, inline edit, tests.html, seed.json, demo video.
+Not completed due to time: JSON import/export, currency settings, 7-day chart, inline edit, tests.html, seed.json, .
+
+### CodePause dashboard (AI score)
+![CodePause dashboard showing AI and manual percentages](codepause-dashboard.png)
 
 
 ## AI usage disclosure
